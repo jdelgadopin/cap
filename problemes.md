@@ -132,3 +132,20 @@ problemes de Clojure al Jutge. Així que tindrà, de ben segur, una vida limitad
   (my-frequencies [:b :a :b :a :b])     👉 {:a 2, :b 3}
   (my-frequencies '([1 2] [1 3] [1 3])) 👉 {[1 2] 1, [1 3] 2}
   ```
+
+---
+
+## Fonts dels exercicis
+
+La gran majoria dels problemes llistats no ens els hem inventat nosaltres. Les fonts d'on hem tret alguns
+problemes són, de moment, les següents:
+
+* Curs [Functional Programming in Clojure](https://iloveponies.github.io/120-hour-epic-sax-marathon/).
+  Els autors del curs són Juhana Laurinharju, Jani Rahkola i Ilmari
+  Vacklin. El curs va ser un MOOC que es va fer des del Departament de
+  _Computer Science_ a l'Universitat de Helsinki.
+  [Web](https://iloveponies.github.io/).
+  
+* Col·lecció de problemes [4ever-Clojure](https://4clojure.oxal.org/). Lloc amb més de cent problemes
+  pensats per ser resolts en Clojure, amb solucions (si us plau, no mireu les solucions fins no haver
+  pensat força un problema; altrament és temps perdut).
