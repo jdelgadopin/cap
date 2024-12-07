@@ -8,8 +8,6 @@ class: center, up
 
 Departament de Ciències de la Computació (UPC)
 
-.large[**Curs 2024-25**]
-
 ![:scale 35%](figures/fib50anysUPC.png)
 
 ---
@@ -20,21 +18,21 @@ Departament de Ciències de la Computació (UPC)
 
 ### Guió: <ins>Programació funcional</ins> (en Clojure)
 
-* Tema 1: [**Clojure: Introducció**](s01_02.html)
+* Tema 1: [**Clojure: Introducció**](t1.html)
 
-* Tema 2: [**Funcions _first-class_**](s03_04.html)
+* Tema 2: [**Funcions _first-class_**](t2.html)
 
-* Tema 3: [**_Closures_ - Model d'entorns**](s05_06.html)
+* Tema 3: [**_Closures_ - Model d'entorns**](t3.html)
 
-* Tema 4: [**Tècniques de programació amb funcions d'ordre superior**](s07_08.html)
+* Tema 4: [**Tècniques de programació amb funcions d'ordre superior**](t4.html)
 
-* Tema 5: [**Immutabilitat d'Estructures de Dades**](s09.html)
+* Tema 5: [**Immutabilitat d'Estructures de Dades**](t5.html)
 
-* Tema 6: [**Seqüències _Lazy_**](s10.html)
+* Tema 6: [**Seqüències _Lazy_**](t6.html)
 
-* Tema 7: [**Macros**](s11.html)
+* Tema 7: [**Macros**](t7.html)
 
-<br>Finalment: [**Consells generals per a la programació funcional en Clojure**](https://jdelgadopin.github.io/CAP2024-25/#9)
+<br>Finalment: [**Consells generals per a la programació funcional en Clojure**](https://jdelgadopin.github.io/cap/#9)
 
 ---
 
