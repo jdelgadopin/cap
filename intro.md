@@ -32,7 +32,9 @@ Departament de Ciències de la Computació (UPC)
 
 * Tema 7: [**Macros**](t7.html)
 
-<br>Finalment: [**Consells generals per a la programació funcional en Clojure**](https://jdelgadopin.github.io/cap/#9)
+[**Llista d'exercicis**](problemes.html)
+
+Finalment: [**Consells generals per a la programació funcional en Clojure**](https://jdelgadopin.github.io/cap/#9)
 
 ---
 
