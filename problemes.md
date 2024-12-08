@@ -132,6 +132,76 @@ problemes de Clojure al Jutge. Així que tindrà, de ben segur, una vida limitad
   (my-frequencies [:b :a :b :a :b])     👉 {:a 2, :b 3}
   (my-frequencies '([1 2] [1 3] [1 3])) 👉 {[1 2] 1, [1 3] 2}
   ```
+  
+* Implementeu la funció `reductions`, sense fer servir `reductions` de Clojure, és clar. La podeu
+  anomenar, per ser originals, `my-reductions`. Tingueu en compte la _laziness_.
+
+---
+
+## Exercicis
+
+* Donades diverses funcions com a arguments, feu una funció `my-juxt`
+  que retorni una funció que, donat un nombre variable d'arguments,
+  retorni la seqüència resultant d'aplicar les funcions, d'esquerra a
+  dreta, als arguments. No podeu fer servir `juxt`.
+  ```Clojure
+  ((my-juxt + max min) 2 3 5 1 6 4) 👉 (21 6 1)
+  ((my-juxt :a :c :b) {:a 2, :b 4, :c 6, :d 8 :e 10}) 👉 (2 6 4)
+  ```
+
+* Escriu una funció `merge-maps` que tingui com a paràmetres una funció `f` i un
+  nombre variable de diccionaris. La vostra funció hauria de retornar
+  un diccionari que consti de la resta de diccionaris _conj-ed_ al
+  primer. Si es troba la mateixa clau en més d'un diccionari, el valor
+  de la clau cal modificar-lo fent servir la funció `f`: `(f
+  valor-actual valor-trobat)`. Els diccionaris es processaran
+  d'esquerra a dreta. No podeu fer servir `merge-with`.
+  ```Clojure
+  (merge-maps * {:a 2, :b 3, :c 4} {:a 2} {:b 2} {:c 5}) 👉 {:a 4, :b 6, :c 20}
+  (merge-maps - {1 10, 2 20} {1 3, 2 10, 3 15}) 👉 {1 7, 2 10, 3 15}
+  (merge-maps concat {:a [3], :b [6]} {:a [4 5], :c [8 9]} {:b [7]})
+  👉 {:a [3 4 5], :b [6 7], :c [8 9]}
+  ```
+---
+
+## Exercicis
+
+* Escriu una funció `anagrames` que trobi tots els anagrames d'un vector de
+  paraules. Una paraula x és un anagrama de la paraula y si totes les
+  lletres de x es poden reordenar en un ordre diferent per formar y.
+  La vostra funció hauria de retornar un conjunt de conjunts, on cada
+  subconjunt és un grup de paraules que són anagrames entre si. Cada
+  subconjunt ha de tenir almenys dues paraules. Les paraules sense
+  anagrama no s'han d'incloure al resultat.
+  ```Clojure
+  (anagrames ["val" "jo" "pila" "lav"]) 👉 #{#{"lav" "val"}}
+  (anagrames ["astro" "nas" "sant" "ostra" "san"]) 
+  👉 #{#{"san" "nas"} #{"astro" "ostra"}}
+  (anagrames ["llac" "sopa" "itres" "call" "estri" "nou" "isert" "onu" ]) 
+  👉 #{#{"nou" "onu"} #{"itres" "estri" "isert"} #{"call" "llac"}}
+  ```
+  
+* Escriu una funció `aplana-parcial` que aplani qualsevol combinació
+  imbricada de col·leccions seqüencials (llistes, vectors, etc.), però
+  mantingui els elements seqüencials de nivell més baix. El resultat
+  hauria de ser una seqüència de seqüències amb només un nivell
+  d'imbricació.
+  ```Clojure
+  (aplana-parcial [["Fes"] ["Res"]]) 👉 (["Fes"] ["Res"])
+  (aplana-parcial [[[[:a :b]]] [[:c :d]] [:e :f]]) 👉 ([:a :b] [:c :d] [:e :f])
+  (aplana-parcial '((1 2)((3 4)((((5 6 7))))))) 👉 ((1 2) (3 4) (5 6 7))
+  ```
+
+---
+
+## Exercicis
+
+* Torneu a la [plana 46 del Tema 1](https://jdelgadopin.github.io/cap/t1.html#46) i re-implementeu
+  `balancejat` d'una manera més funcional.
+  
+* Penseu un [**Quine**](https://en.wikipedia.org/wiki/Quine_%28computing%29) en Clojure. Al tanto, que no es fàcil, tot i que és molt més fàcil en Clojure
+  que en, per exemple, C, C++ o Java. Podeu trobar solucions _on-line_, però busqueu-les només
+  després d'haver-ho provat de debó.
 
 ---
 
@@ -149,3 +219,4 @@ problemes són, de moment, les següents:
 * Col·lecció de problemes [4ever-Clojure](https://4clojure.oxal.org/). Lloc amb més de cent problemes
   pensats per ser resolts en Clojure, amb solucions (si us plau, no mireu les solucions fins no haver
   pensat força un problema; altrament és temps perdut).
+
