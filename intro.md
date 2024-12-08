@@ -32,7 +32,9 @@ Departament de Ciències de la Computació (UPC)
 
 * Tema 7: [**Macros**](t7.html)
 
-[**Llista d'exercicis**](problemes.html)
+A banda dels [exercicis de les sessions de laboratori](https://gebakx.github.io/cap) i els que hi ha a [les 
+transparències de teoria](https://jdelgadopin.github.io/cap/#2), aquí teniu una
+[**llista d'exercicis**](problemes.html) addicional.
 
 Finalment: [**Consells generals per a la programació funcional en Clojure**](https://jdelgadopin.github.io/cap/#9)
 
