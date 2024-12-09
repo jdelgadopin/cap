@@ -199,10 +199,37 @@ problemes de Clojure al Jutge. Així que tindrà, de ben segur, una vida limitad
 * Torneu a la [plana 46 del Tema 1](https://jdelgadopin.github.io/cap/t1.html#46) i re-implementeu
   `balancejat` d'una manera més funcional.
   
-* Penseu un [**Quine**](https://en.wikipedia.org/wiki/Quine_%28computing%29) en Clojure. Al tanto, que no es fàcil, tot i que és molt més fàcil en Clojure
-  que en, per exemple, C, C++ o Java. Podeu trobar solucions _on-line_, però busqueu-les només
-  després d'haver-ho provat de debó.
+* Penseu un [**Quine**](https://en.wikipedia.org/wiki/Quine_%28computing%29) en
+  Clojure. Al tanto, que no es fàcil, tot i que és molt més fàcil en
+  Clojure que en, per exemple, C, C++ o Java. Podeu trobar solucions
+  _on-line_ (al tanto, proveu-les perquè algunes són incorrectes), però
+  busqueu-les només després d'haver-ho provat de debó.
 
+
+
+---
+
+## Exercicis
+
+* [[X30150](https://jutge.org/problems/X30150_en)] Feu una funció `decodifica-arbre-binari-int` que donada una codificació
+  _size-based_ d'un arbre binari, retorni l'arbre binari expressat en termes de diccionaris de
+  la forma `{:val n, :L <arbre esq.>, :R <arbre dre.>}`. Aquesta codificació està explicada al problema [X30150](https://jutge.org/problems/X30150_en) 
+  del Jutge. Per exemple, si tenim l'arbre
+  .center[![:scale 25%](figures/arbre.png)]<br>
+  amb codificació `[10 3 4 0 2 7 0 4 0 2 0 5 1 4 0 7 2 6 0 1 0]`, aleshores:
+  ```Clojure
+  (decodifica-arbre-binari-int 10 3 4 0 2 7 0 4 0 2 0 5 1 4 0 7 2 6 0 1 0) 👉
+  ;; resultat "pretty-printed"
+  {:val 3, :L {:val 0, :L {:val 7, :L nil,
+                                     :R {:val 4, :L nil, :R nil}},
+                         :R {:val 2, :L nil, :R nil}},
+             :R {:val 5, :L {:val 4, :L nil, :R nil},
+                         :R {:val 7, :L {:val 6, :L nil,
+                                                 :R {:val 1, :L nil, :R nil}},
+                                     :R nil}}}
+  ```
+  
+  
 ---
 
 ## Fonts dels exercicis
@@ -219,4 +246,6 @@ problemes són, de moment, les següents:
 * Col·lecció de problemes [4ever-Clojure](https://4clojure.oxal.org/). Lloc amb més de cent problemes
   pensats per ser resolts en Clojure, amb solucions (si us plau, no mireu les solucions fins no haver
   pensat força un problema; altrament és temps perdut).
+  
+* El [Jutge](https://jutge.org), que no necessita presentació.
 
