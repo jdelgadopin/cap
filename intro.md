@@ -50,9 +50,9 @@ Finalment: [**Consells generals per a la programació funcional en Clojure**](ht
 
 * **Clojure Programming: Practical Lisp for the Java World**, Emerick, Chas; Carper, Brian; Grand, Christophe, O'Reilly Media, 2012. ISBN: 9781449394707
 
-* **Mastering Clojure Macros: Write Cleaner, Faster, Smarter Code**, Jones, Colin, The Pragmatic Programmers, 2014. ISBN: 9781941222225
+* **Mastering Clojure Macros: Write Cleaner, Faster, Smarter Code**, Jones, Colin, The Pragmatic Programmers, 2014. ISBN: 9781941222225. Capítols 1-4.
 
-Aquests llibres _haurien_ d'estar a la biblioteca 😭 😭 😭
+Aquests llibres _haurien_ d'estar a la biblioteca.
 
 ### Avaluació teoria: 
 
