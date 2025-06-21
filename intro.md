@@ -56,7 +56,7 @@ Aquests llibres _haurien_ d'estar a la biblioteca.
 
 ### Avaluació teoria: 
 
-Examens parcial i final. **Nota de teoria**: .blue[MAX(final, (parcial + final)/2)]
+Examens parcial i final. **Nota de teoria**: .blue[NT = MAX(final, (parcial + final)/2)]
 
 ---
 
@@ -88,8 +88,8 @@ La mitjana de les notes dels projectes serà la nota del laboratori (serà una n
 
 .large[Sigui NT la nota de teoria, i NL la nota de laboratori]
 
-## Nota CAP: &emsp; .red[(NT + NL) / 2 &emsp;&emsp; si &emsp; NT $\geq$ 3.5]
-## Nota CAP: &emsp; .red[NT &emsp;&emsp;&emsp;&emsp;&emsp; si &emsp; NT $\lt$ 3.5]
+## Nota CAP: &emsp; .red[0.8 $\times$ NT + 0.2 $\times$ NL]
+
 
 ---
 
