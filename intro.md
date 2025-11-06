@@ -66,9 +66,7 @@ Examens parcial i final. **Nota de teoria**: .blue[NT = MAX(final, (parcial + fi
 
 ### Jutge -  [https://jutge.org](https://jutge.org)
 
-- Cal que us registreu amb el vostre correu **@estudiantat.upc.edu**
-
-- Apunteu-vos al curs **Problemes en Clojure**
+- Curs **Conceptes Avançats de Programació (Clojure)**
 
 ### Sessions Laboratori - [gebakx.github.io/cap](https://gebakx.github.io/cap)
 
